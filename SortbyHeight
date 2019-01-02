@@ -1,0 +1,28 @@
+#CodeSignal
+#Sort by Height
+
+a = [-1, 150, 190, 170, -1, -1, 160, 180]
+
+_list = []
+
+for x in a:
+    if x < 0:
+        pass
+    else:
+        _list.append(x)
+        
+std = sorted(_list)
+print(std)
+
+result = []
+dex = 0
+
+for y in a:
+    if y < 0:
+        result.append(y)
+    else:
+        result.append(std[dex])
+        dex += 1
+        
+
+print(result)
